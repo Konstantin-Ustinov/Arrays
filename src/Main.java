@@ -17,6 +17,8 @@ public class Main {
         printArrayReverse(arr2);
         printArrayReverse(arr3);
 
+        System.out.println("Задание 4");
+        oddToEven(arr1);
     }
 
     private static void initializationArray(int[] arr1) {
@@ -109,5 +111,12 @@ public class Main {
         }
     }
 
-
+    private static void oddToEven(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] % 2 != 0) {
+                arr[i] += 1;
+            }
+        }
+        printArrayForward(arr);
+    }
 }
